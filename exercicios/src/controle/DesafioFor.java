@@ -1,10 +1,14 @@
 package controle;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DesafioFor {
+
     public static void main(String[] args) {
 
         String valor = "#";
-        for (int i = 0; i <= 5; i++) {
+        for (int i = 0; i < 5; i++) {
             System.out.println(valor);
             valor += "#";
         }
@@ -24,7 +28,6 @@ public class DesafioFor {
         for (String v = "#"; !v.equals("######"); v += "#") {
             System.out.println(v);
         }
-
 
     }
 }
