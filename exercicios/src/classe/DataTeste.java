@@ -7,7 +7,7 @@ public class DataTeste {
         Data d1 = new Data();
         d1.ano = 2021;
 
-        Data d2 = new Data(31,12,2020);
+        var d2 = new Data(31,12,2020);
 
         String dataFormatada1 = d1.obterDataFormatada();
 
