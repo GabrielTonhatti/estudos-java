@@ -12,7 +12,7 @@ public class Compra {
     }
 
     void adicionarItem(Item item) {
-        itens.add(item);
+        this.itens.add(item);
         item.compra = this;
     }
 
