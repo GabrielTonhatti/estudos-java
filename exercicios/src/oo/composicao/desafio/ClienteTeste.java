@@ -7,7 +7,7 @@ public class ClienteTeste {
         Cliente cliente1 = new Cliente("João");
         Compra compra1 = new Compra();
 
-        compra1.adicionarItem("Caderno", 2, 5.98);
+        compra1.adicionarItem("Caderno", 2, 5);
 
         System.out.println(compra1.itens);
     }

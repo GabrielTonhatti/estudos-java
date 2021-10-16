@@ -19,7 +19,7 @@ public class Exercicio4 {
 
         double salario = valor * horas;
 
-        System.out.printf("Number = %d", funcionario);
+        System.out.printf("Number = %d ", funcionario);
         System.out.printf("Salary = U$ %.2f", salario);
 
         entrada.close();
