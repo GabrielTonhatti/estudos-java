@@ -6,7 +6,7 @@ import java.util.List;
 public class Aluno {
 
     final String nome;
-    final List<Curso> cursos =  new ArrayList<>();
+    final List<Curso> cursos = new ArrayList<>();
 
     Aluno(String nome) {
         this.nome = nome;
@@ -19,7 +19,7 @@ public class Aluno {
 
     Curso obterCursoPorNome(String nome) {
         for (Curso curso : this.cursos) {
-            if(curso.nome.equalsIgnoreCase(nome)) {
+            if (curso.nome.equalsIgnoreCase(nome)) {
                 return curso;
             }
         }
