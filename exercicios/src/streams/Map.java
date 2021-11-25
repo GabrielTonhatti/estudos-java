@@ -14,15 +14,15 @@ public class Map {
         List<String> marcas = Arrays.asList("BMW ", "Audi ", "Honda ");
         marcas.stream().map(m -> m.toUpperCase()).forEach(print);
 
-        UnaryOperator<String> maiuscula = n -> n.toUpperCase();
+//        UnaryOperator<String> maiuscula = n -> n.toUpperCase();
         UnaryOperator<String> primeiraLetra = n -> n.charAt(0) + "";
-        UnaryOperator<String> grito = n -> n + "!!! ";
+//        UnaryOperator<String> grito = n -> n + "!!! ";
 
         System.out.println("\n\nUsando composição...");
         marcas.stream()
-                .map(maiuscula)
+                .map(Utilitarios.maiuscula)
                 .map(primeiraLetra)
-                .map(grito)
+                .map(Utilitarios::grito)
                 .forEach(print);
 
     }
