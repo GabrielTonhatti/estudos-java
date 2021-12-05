@@ -1,7 +1,5 @@
 package streams;
 
-import java.util.Objects;
-
 public class Aluno {
 
     final String nome;
