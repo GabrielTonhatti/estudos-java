@@ -1,8 +1,5 @@
 package controle;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class DesafioFor {
 
     public static void main(String[] args) {

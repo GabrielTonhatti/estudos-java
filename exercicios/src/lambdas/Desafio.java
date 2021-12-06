@@ -1,7 +1,5 @@
 package lambdas;
 
-import java.math.RoundingMode;
-import java.text.DecimalFormat;
 import java.util.function.BinaryOperator;
 
 public class Desafio {
