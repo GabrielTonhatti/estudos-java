@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="clinica/src"/>
+	<classpathentry kind="src" path="faculdade/src"/>
+	<classpathentry kind="output" path="clinica/bin"/>
+</classpath>
