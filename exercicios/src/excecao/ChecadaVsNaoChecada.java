@@ -3,7 +3,7 @@ package excecao;
 public class ChecadaVsNaoChecada {
 
 	public static void main(String[] args) {
-		
+
 		try {
 			geraErro1();
 		} catch (Exception e) {
