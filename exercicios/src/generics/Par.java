@@ -1,5 +1,7 @@
 package generics;
 
+import java.util.Objects;
+
 public class Par<C, V> {
 
 	private C chave;
@@ -29,6 +31,23 @@ public class Par<C, V> {
 
 	public void setValor(V valor) {
 		this.valor = valor;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(chave);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Par<?, ?> other = (Par<?, ?>) obj;
+		return Objects.equals(chave, other.chave);
 	}
 
 }
