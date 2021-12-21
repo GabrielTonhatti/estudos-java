@@ -28,6 +28,5 @@ public class DesafioFilter {
                 .map(desconto)
                 .forEach(System.out::println);
 
-
     }
 }
