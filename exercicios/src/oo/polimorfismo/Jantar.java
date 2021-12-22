@@ -7,7 +7,7 @@ public class Jantar {
         Pessoa convidado = new Pessoa(99.65);
 
         Arroz ingrediente1 = new Arroz(0.2);
-        Feijão ingrediente2 = new Feijão(0.1);
+        Feijao ingrediente2 = new Feijao(0.1);
 
         Comida ingrediente3 = new Arroz(0.3);
 

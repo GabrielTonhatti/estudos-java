@@ -1,10 +1,10 @@
 package oo.polimorfismo;
 
-public class Feijão extends Comida {
+public class Feijao extends Comida {
 
     private double peso;
 
-    public Feijão(double peso) {
+    public Feijao(double peso) {
         super(peso);
     }
 }
