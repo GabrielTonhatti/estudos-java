@@ -3,21 +3,23 @@ package jdbc;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 
-public class TesteConexao {
+public class CriarBanco {
 
 	public static void main(String[] args) throws SQLException {
 
 		final String stringDeConexao = "jdbc:mysql://localhost?verifyServerCertificate=false&useSSL=true";
-		// Pega o valor da variável configurada na IDE
-		// String teste = System.getenv("DATABASE_URL");
 		final String usuario = "curso-java";
 		final String senha = "123456";
 
 		Connection conexao = DriverManager.getConnection(stringDeConexao, usuario, senha);
 
-		System.out.println("Conexão efetuada com sucesso!");
+		Statement stmt = conexao.createStatement();
 
+		stmt.execute("CREATE DATABASE IF NOT EXISTS curso_java");
+
+		System.out.println("Banco criado com sucesso!");
 		conexao.close();
 
 	}
