@@ -18,7 +18,7 @@ public class ProdutoController {
     private ProdutoRepository produtoRepository;
 
     //    @PostMapping
-//    @PutMapping
+    //    @PutMapping
     @RequestMapping(method = {RequestMethod.POST, RequestMethod.PUT})
     public @ResponseBody
     Produto salvarProduto(@Valid Produto produto) {
